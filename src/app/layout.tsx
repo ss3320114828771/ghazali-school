@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Layout/Navbar";
 import Footer from "@/components/Layout/Footer";
 import DashboardLayout from "./(dashboard)/layout";
+import LoginPage from "./(auth)/login/page";
 
 
 
@@ -32,6 +33,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+      <LoginPage/>
         <Navbar/>
         {children}
       </body>
